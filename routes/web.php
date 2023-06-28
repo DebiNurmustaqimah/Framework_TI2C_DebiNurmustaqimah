@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use app\Http\Controllers;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,19 +14,60 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/welcome', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('/home', function(){
-    return view('home');
-});
+// Route::get('/beranda', function(){
+//     return view('beranda');
+// });
 
+Route::get('/beranda', function(){
+    return view('beranda');
+});
 
 Route::get('/', function(){
     return view('login');
 });
 
 Route::get('/register', function(){
-    return view('register');
+    return view('../register');
 });
+
+Route::get('/logout', function(){
+    return view('login');
+});
+
+Route::get('/search', function(){
+    return view('search');
+});
+
+Route::get('/aboutme', function(){
+    return view('aboutme');
+});
+
+Route::get('/portofolio', function(){
+    return view('portofolio');
+});
+
+Route::get('/blog', function(){
+    return view('blog');
+});
+
+Route::get('/client', function(){
+    return view('client');
+});
+
+Route::get('/contact', function(){
+    return view('contact');
+});
+
+Route::get('/chat', function(){
+    return view('chat');
+});
+
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
