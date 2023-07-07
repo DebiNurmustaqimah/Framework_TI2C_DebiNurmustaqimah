@@ -27,15 +27,15 @@ Route::get('/beranda', function(){
 });
 
 Route::get('/', function(){
-    return view('login');
+    return view('auth.login');
 });
 
-Route::get('/register', function(){
-    return view('../register');
+Route::get('/auth.register', function(){
+    return view('auth.register');
 });
 
 Route::get('/logout', function(){
-    return view('login');
+    return view('auth.login');
 });
 
 Route::get('/search', function(){

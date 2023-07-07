@@ -108,10 +108,10 @@
         .tulisan {
             position: absolute;
             top: 400px;
-            left: 620px;
+            left: 590px;
             font-size: 24px;
             font-weight: bold;
-            color: black;
+
         }
 
         .deskripsi {
@@ -136,26 +136,35 @@
             right: 450px;
         }
 
-        .icon{
+        .icon {
             text-decoration: none;
             margin: 0 5px;
         }
 
-        .row{
+        .row {
             position: absolute;
             height: 10%;
             top: 550px;
             left: 500px;
             right: 500px;
         }
-        .btn{
+
+        .btn {
             background-color: #FFCAC8;
             font-weight: bold;
         }
-        .nav-pills{
 
+        .nav-pills .nav-link.active {
+            background-color: white;
         }
 
+        .scroll {
+            position: absolute;
+            align: center;
+            top: 700px;
+            left: 720px;
+            text-align: center;
+        }
     </style>
 
     <link href="sidebars.css" rel="stylesheet">
@@ -282,7 +291,8 @@
                 <img src="../img/user.png" alt="mdo" width="250" height="250" class="rounded-circle">
             </div>
             <div class="tulisan">
-                DEBI NURMUSTAQIMAH
+                <a class="nav text-center text-black" style="text-decoration:none" href="#" >
+                    {{ Auth::user()->name }}
             </div>
             <div class="deskripsi">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo eveniet dolore ut
                 autem exercitationem qui Hahdaugfabf ajdag ndjssu.</div>
@@ -290,32 +300,32 @@
             <div class="media-sosial">
                 <ul class="nav nav-flush mb-auto text-center">
                     <li>
-                        <a href="search" class="icon" title="Tik Tok"
-                            data-bs-toggle="tooltip" data-bs-placement="right">
+                        <a href="search" class="icon" title="Tik Tok" data-bs-toggle="tooltip"
+                            data-bs-placement="right">
                             <i class="bi bi-tiktok icon-color" style="font-size: 24px"></i>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="beranda" class="icon" aria-current="page"
-                            title="Twitter" data-bs-toggle="tooltip" data-bs-placement="right">
+                        <a href="beranda" class="icon" aria-current="page" title="Twitter"
+                            data-bs-toggle="tooltip" data-bs-placement="right">
                             <i class="bbi bi-twitter icon-color" style="font-size: 24px"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="aboutme" class="icon" title="Gituhub"
-                            data-bs-toggle="tooltip" data-bs-placement="right">
+                        <a href="aboutme" class="icon" title="Gituhub" data-bs-toggle="tooltip"
+                            data-bs-placement="right">
                             <i class="bi bi-github icon-color" style="font-size: 24px"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="aboutme" class="icon" title="Websites"
-                            data-bs-toggle="tooltip" data-bs-placement="right">
+                        <a href="aboutme" class="icon" title="Websites" data-bs-toggle="tooltip"
+                            data-bs-placement="right">
                             <i class="bi bi-globe icon-color" style="font-size: 24px"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="portofolio" class="icon" title="Youtube"
-                            data-bs-toggle="tooltip" data-bs-placement="right">
+                        <a href="portofolio" class="icon" title="Youtube" data-bs-toggle="tooltip"
+                            data-bs-placement="right">
                             <i class="bi bi-youtube icon-color" style="font-size: 24px"></i>
                         </a>
                     </li>
@@ -324,10 +334,15 @@
 
             <div class="row mb-0">
                 <div class="col-md-6 offset-md-4 text-center">
-                    <button type="text" href="aboutme" class="btn ">
+                    <button type="text" class="btn" href="aboutme">
                         {{ __('Tentang Saya') }}
                     </button>
                 </div>
+            </div>
+
+            <div class="scroll">
+                <p>Scroll Down</p>
+                <i class="bi bi-arrow-down-circle-fill" style="font-size: 20px"></i>
             </div>
         </main>
         <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>

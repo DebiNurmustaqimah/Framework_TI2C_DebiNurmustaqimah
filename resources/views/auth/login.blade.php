@@ -109,7 +109,7 @@
                                     </button>
 
                                     <div class="login-card-footer mt-2  ">
-                                        Don't have an account? <a href="register">Create a free account.</a>
+                                        Don't have an account? <a href="auth.register">Create a free account.</a>
                                     </div>
                                 </div>
                             </div>
