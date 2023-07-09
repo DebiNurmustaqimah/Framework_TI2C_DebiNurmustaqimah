@@ -157,6 +157,56 @@
         .nav-pills .nav-link.active {
             background-color: white;
         }
+
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px;
+            margin-top: 20px;
+        }
+
+        .blog-card {
+            background-color: #ffffff;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .blog-img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        .blog-title {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .blog-description {
+            margin-bottom: 15px;
+        }
+
+        .read-more {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #FFCAC8;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .read-more:hover {
+            background-color: #e86e6acf;
+        }
     </style>
 
     <link href="sidebars.css" rel="stylesheet">
@@ -232,13 +282,13 @@
                         </a>
                     </li>
                     <li>
-                        <a href="blog" class="nav-link  active py-2 border-bottom rounded-0" title="Blog"
+                        <a href="blog" class="nav-link active py-2 border-bottom rounded-0" title="Blog"
                             data-bs-toggle="tooltip" data-bs-placement="right">
                             <i class="bi bi-pencil-square icon-color" style="font-size: 24px"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="client" class="nav-link py-2 border-bottom rounded-0" title="Client"
+                        <a href="client" class="nav-link  py-2 border-bottom rounded-0" title="Client"
                             data-bs-toggle="tooltip" data-bs-placement="right">
                             <i class="bi bi-database-fill icon-color" style="font-size: 24px"></i>
                         </a>
@@ -279,57 +329,65 @@
                     </ul>
                 </div>
             </div>
-            <div class="page container-lg">
-                <img src="../img/user.png" alt="mdo" width="250" height="250" class="rounded-circle">
-            </div>
-            <div class="tulisan">
-                DEBI NURMUSTAQIMAH
-            </div>
-            <div class="deskripsi">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo eveniet dolore ut
-                autem exercitationem qui Hahdaugfabf ajdag ndjssu.</div>
 
-            <div class="media-sosial">
-                <ul class="nav nav-flush mb-auto text-center">
-                    <li>
-                        <a href="search" class="icon" title="Tik Tok" data-bs-toggle="tooltip"
-                            data-bs-placement="right">
-                            <i class="bi bi-tiktok icon-color" style="font-size: 24px"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="beranda" class="icon" aria-current="page" title="Twitter"
-                            data-bs-toggle="tooltip" data-bs-placement="right">
-                            <i class="bi bi-twitter icon-color" style="font-size: 24px"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="aboutme" class="icon" title="Gituhub" data-bs-toggle="tooltip"
-                            data-bs-placement="right">
-                            <i class="bi bi-github icon-color" style="font-size: 24px"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="aboutme" class="icon" title="Websites" data-bs-toggle="tooltip"
-                            data-bs-placement="right">
-                            <i class="bi bi-globe icon-color" style="font-size: 24px"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="portofolio" class="icon" title="Youtube" data-bs-toggle="tooltip"
-                            data-bs-placement="right">
-                            <i class="bi bi-youtube icon-color" style="font-size: 24px"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="row mb-0">
-                <div class="col-md-6 offset-md-4 text-center">
-                    <button type="text" href="aboutme" class="btn ">
-                        {{ __('Tentang Saya') }}
-                    </button>
+            <!-- Content-->
+            <div class="container">
+                <h1 class="mt-4 mb-4 text-center">Blog</h1>
+                <div class="blog-grid">
+                    <div class="blog-card">
+                        <img src="../img/blog1.jpeg" alt="Blog Image" class="blog-img">
+                        <h2 class="blog-title">Blog Title 1</h2>
+                        <a href="#" class="read-more">Lihat</a>
+                    </div>
+                    <div class="blog-card">
+                        <img src="../img/blog2.jpeg" alt="Blog Image" class="blog-img">
+                        <h2 class="blog-title">Blog Title 2</h2>
+                        <a href="#" class="read-more">Lihat</a>
+                    </div>
+                    <div class="blog-card">
+                        <img src="../img/blog3.jpeg" alt="Blog Image" class="blog-img">
+                        <h2 class="blog-title">Blog Title 3</h2>
+                        <a href="#" class="read-more">Lihat</a>
+                    </div>
+                </div>
+                <div class="blog-grid">
+                    <div class="blog-card">
+                        <img src="../img/blog4.jpeg" alt="Blog Image" class="blog-img">
+                        <h2 class="blog-title">Blog Title 1</h2>
+                        <a href="#" class="read-more">Lihat</a>
+                    </div>
+                    <div class="blog-card">
+                        <img src="../img/blog5.jpeg" alt="Blog Image" class="blog-img">
+                        <h2 class="blog-title">Blog Title 2</h2>
+                        <a href="#" class="read-more">Lihat</a>
+                    </div>
+                    <div class="blog-card">
+                        <img src="../img/blog6.jpeg" alt="Blog Image" class="blog-img">
+                        <h2 class="blog-title">Blog Title 3</h2>
+                        <a href="#" class="read-more">Lihat</a>
+                    </div>
+                </div>
+                <div class="blog-grid">
+                    <div class="blog-card">
+                        <img src="../img/blog7.jpeg" alt="Blog Image" class="blog-img">
+                        <h2 class="blog-title">Blog Title 1</h2>
+                        <a href="#" class="read-more">Lihat</a>
+                    </div>
+                    <div class="blog-card">
+                        <img src="../img/blog8.jpeg" alt="Blog Image" class="blog-img">
+                        <h2 class="blog-title">Blog Title 2</h2>
+                        <a href="#" class="read-more">Lihat</a>
+                    </div>
+                    <div class="blog-card">
+                        <img src="../img/blog9.jpeg" alt="Blog Image" class="blog-img">
+                        <h2 class="blog-title">Blog Title 3</h2>
+                        <a href="#" class="read-more">Lihat</a>
+                    </div>
                 </div>
             </div>
+
+            <!-- End Content-->
+
         </main>
         <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"

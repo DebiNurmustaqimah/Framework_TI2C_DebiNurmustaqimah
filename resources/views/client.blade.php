@@ -157,6 +157,60 @@
         .nav-pills .nav-link.active {
             background-color: white;
         }
+
+        .gambar {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            align-items: center;
+        }
+
+        .gambar img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .carousel {
+            position: absolute;
+            top: 60%;
+            left: 55%;
+            transform: translate(-50%, -50%);
+            width: 600px;
+            height: 400px;
+        }
+
+        .carousel-item {
+            align-content: center;
+            height: 350px;
+            align-items: center;
+
+        }
+
+        .carousel-item image {
+            width: 100px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            ;
+        }
+
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            left: 10px;
+            right: 0;
+            color: black;
+            border-radius: 10px;
+        }
+
+        .carousel-item-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     </style>
 
     <link href="sidebars.css" rel="stylesheet">
@@ -279,57 +333,70 @@
                     </ul>
                 </div>
             </div>
-            <div class="page container-lg">
-                <img src="../img/user.png" alt="mdo" width="250" height="250" class="rounded-circle">
-            </div>
-            <div class="tulisan">
-                DEBI NURMUSTAQIMAH
-            </div>
-            <div class="deskripsi">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo eveniet dolore ut
-                autem exercitationem qui Hahdaugfabf ajdag ndjssu.</div>
 
-            <div class="media-sosial">
-                <ul class="nav nav-flush mb-auto text-center">
-                    <li>
-                        <a href="search" class="icon" title="Tik Tok" data-bs-toggle="tooltip"
-                            data-bs-placement="right">
-                            <i class="bi bi-tiktok icon-color" style="font-size: 24px"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="beranda" class="icon" aria-current="page" title="Twitter"
-                            data-bs-toggle="tooltip" data-bs-placement="right">
-                            <i class="bbi bi-twitter icon-color" style="font-size: 24px"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="aboutme" class="icon" title="Gituhub" data-bs-toggle="tooltip"
-                            data-bs-placement="right">
-                            <i class="bi bi-github icon-color" style="font-size: 24px"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="aboutme" class="icon" title="Websites" data-bs-toggle="tooltip"
-                            data-bs-placement="right">
-                            <i class="bi bi-globe icon-color" style="font-size: 24px"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="portofolio" class="icon" title="Youtube" data-bs-toggle="tooltip"
-                            data-bs-placement="right">
-                            <i class="bi bi-youtube icon-color" style="font-size: 24px"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="row mb-0">
-                <div class="col-md-6 offset-md-4 text-center">
-                    <button type="text" href="aboutme" class="btn ">
-                        {{ __('Tentang Saya') }}
+            <!-- Content-->
+            <div class="container">
+                <h1 class="mt-5 mb-4 text-center">Client</h1>
+                <div id="carouselExampleCaptions" class="carousel slide ">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="carousel-item-center">
+                                <div class="gambar">
+                                    <img src="../img/user.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Debby Bivera</h5>
+                                    <p>Some representative placeholder content for the first slide.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-item-center">
+                                <div class="gambar">
+                                    <img src="../img/user.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>fery Firnanda</h5>
+                                    <p>Some representative placeholder content for the first slide.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-item-center">
+                                <div class="gambar">
+                                    <img src="../img/user.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Rahmi Zuhra</h5>
+                                    <p>Some representative placeholder content for the first slide.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
                     </button>
                 </div>
             </div>
+
+
+            <!-- End Content-->
+
         </main>
         <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"

@@ -157,6 +157,15 @@
         .nav-pills .nav-link.active {
             background-color: white;
         }
+
+        .contact-container {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 500px;
+            height: 200px;
+        }
     </style>
 
     <link href="sidebars.css" rel="stylesheet">
@@ -279,57 +288,28 @@
                     </ul>
                 </div>
             </div>
-            <div class="page container-lg">
-                <img src="../img/user.png" alt="mdo" width="250" height="250" class="rounded-circle">
-            </div>
-            <div class="tulisan">
-                DEBI NURMUSTAQIMAH
-            </div>
-            <div class="deskripsi">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo eveniet dolore ut
-                autem exercitationem qui Hahdaugfabf ajdag ndjssu.</div>
 
-            <div class="media-sosial">
-                <ul class="nav nav-flush mb-auto text-center">
-                    <li>
-                        <a href="search" class="icon" title="Tik Tok" data-bs-toggle="tooltip"
-                            data-bs-placement="right">
-                            <i class="bi bi-tiktok icon-color" style="font-size: 24px"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="beranda" class="icon" aria-current="page" title="Twitter"
-                            data-bs-toggle="tooltip" data-bs-placement="right">
-                            <i class="bbi bi-twitter icon-color" style="font-size: 24px"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="aboutme" class="icon" title="Gituhub" data-bs-toggle="tooltip"
-                            data-bs-placement="right">
-                            <i class="bi bi-github icon-color" style="font-size: 24px"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="aboutme" class="icon" title="Websites" data-bs-toggle="tooltip"
-                            data-bs-placement="right">
-                            <i class="bi bi-globe icon-color" style="font-size: 24px"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="portofolio" class="icon" title="Youtube" data-bs-toggle="tooltip"
-                            data-bs-placement="right">
-                            <i class="bi bi-youtube icon-color" style="font-size: 24px"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="row mb-0">
-                <div class="col-md-6 offset-md-4 text-center">
-                    <button type="text" href="aboutme" class="btn ">
-                        {{ __('Tentang Saya') }}
-                    </button>
+            <div class="page-section">
+                <div class="contact-container">
+                    <h1 class=" text-center ">Kontak Saya</h1>
+                    <div class="row-pesan mt-5">
+                        <div class="col-12 py-2 wow fadeInLeft">Telephon
+                            <input type="text" class="form-control" placeholder="Masukkan No">
+                        </div>
+                        <div class="col-12 py-2 wow fadeInRight">Whatapps
+                            <input type="text" class="form-control" placeholder="Masukkan No">
+                        </div>
+                        <div class="col-12 py-2 wow fadeInRight">Messanger
+                            <input type="text" class="form-control" placeholder="Masukkan No">
+                        </div>
+                        <div class="col-12 py-2 wow fadeInRight">Telegram
+                            <input type="text" class="form-control" placeholder="Masukkan No">
+                        </div>
+                        </form>
+                        <button type="submit" class="btn btn-primary mt-3 wow zoomIn">Edit</button>
+                    </div>
                 </div>
-            </div>
+
         </main>
         <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"

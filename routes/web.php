@@ -66,6 +66,14 @@ Route::get('/chat', function(){
     return view('chat');
 });
 
+Route::get('/settings', function(){
+    return view('settings');
+});
+
+Route::get('/contoh', function(){
+    return view('contoh');
+});
+
 
 Auth::routes();
 

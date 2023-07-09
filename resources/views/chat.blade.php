@@ -157,6 +157,42 @@
         .nav-pills .nav-link.active {
             background-color: white;
         }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .message-list {
+            margin-top: 20px;
+        }
+
+        .message {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .message-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .sender {
+            font-weight: bold;
+        }
+
+        .date {
+            color: black;
+        }
+
+        .message-content {
+            line-height: 1.5;
+        }
     </style>
 
     <link href="sidebars.css" rel="stylesheet">
@@ -220,7 +256,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="aboutme" class="nav-link  py-2 border-bottom rounded-0" title="About Me"
+                        <a href="aboutme" class="nav-link py-2 border-bottom rounded-0" title="About Me"
                             data-bs-toggle="tooltip" data-bs-placement="right">
                             <i class="bi bi-person-square icon-color" style="font-size: 24px"></i>
                         </a>
@@ -238,7 +274,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="client" class="nav-link py-2 border-bottom rounded-0" title="Client"
+                        <a href="client" class="nav-link   py-2 border-bottom rounded-0" title="Client"
                             data-bs-toggle="tooltip" data-bs-placement="right">
                             <i class="bi bi-database-fill icon-color" style="font-size: 24px"></i>
                         </a>
@@ -279,57 +315,55 @@
                     </ul>
                 </div>
             </div>
-            <div class="page container-lg">
-                <img src="../img/user.png" alt="mdo" width="250" height="250" class="rounded-circle">
-            </div>
-            <div class="tulisan">
-                DEBI NURMUSTAQIMAH
-            </div>
-            <div class="deskripsi">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo eveniet dolore ut
-                autem exercitationem qui Hahdaugfabf ajdag ndjssu.</div>
 
-            <div class="media-sosial">
-                <ul class="nav nav-flush mb-auto text-center">
-                    <li>
-                        <a href="search" class="icon" title="Tik Tok" data-bs-toggle="tooltip"
-                            data-bs-placement="right">
-                            <i class="bi bi-tiktok icon-color" style="font-size: 24px"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="beranda" class="icon" aria-current="page" title="Twitter"
-                            data-bs-toggle="tooltip" data-bs-placement="right">
-                            <i class="bbi bi-twitter icon-color" style="font-size: 24px"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="aboutme" class="icon" title="Gituhub" data-bs-toggle="tooltip"
-                            data-bs-placement="right">
-                            <i class="bi bi-github icon-color" style="font-size: 24px"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="aboutme" class="icon" title="Websites" data-bs-toggle="tooltip"
-                            data-bs-placement="right">
-                            <i class="bi bi-globe icon-color" style="font-size: 24px"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="portofolio" class="icon" title="Youtube" data-bs-toggle="tooltip"
-                            data-bs-placement="right">
-                            <i class="bi bi-youtube icon-color" style="font-size: 24px"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+            <!-- Content-->
 
-            <div class="row mb-0">
-                <div class="col-md-6 offset-md-4 text-center">
-                    <button type="text" href="aboutme" class="btn ">
-                        {{ __('Tentang Saya') }}
-                    </button>
+            <div class="container">
+                <h1 class="text-center">Pesan</h1>
+                <div class="message-list">
+                    <div class="message">
+                        <div class="message-header">
+                            <div class="sender">Fery Firnanda</div>
+                            <div class="date">July 9, 2023</div>
+                        </div>
+                        <div class="message-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat finibus neque,
+                                vel
+                                dapibus odio tincidunt vel. Nullam tempor justo eu purus dignissim pulvinar.</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="message-header">
+                            <div class="sender">Rahmi Zuhra</div>
+                            <div class="date">July 8, 2023</div>
+                        </div>
+                        <div class="message-content">
+                            <p>Nulla at tortor nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                                posuere
+                                cubilia Curae; Suspendisse eu justo ac orci euismod vulputate. Vivamus rhoncus neque
+                                vitae mi
+                                tincidunt, et egestas odio rutrum.</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="message-header">
+                            <div class="sender">Debby Bivera</div>
+                            <div class="date">July 7, 2023</div>
+                        </div>
+                        <div class="message-content">
+                            <p>Morbi pellentesque sagittis metus, et faucibus metus vulputate ut. Donec auctor nisi
+                                vitae
+                                hendrerit rhoncus. Duis bibendum, libero at auctor elementum, purus risus semper sem,
+                                vel
+                                fermentum purus turpis sed tortor.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+
+            <!-- End Content-->
+
         </main>
         <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"

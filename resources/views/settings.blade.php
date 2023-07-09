@@ -157,56 +157,6 @@
         .nav-pills .nav-link.active {
             background-color: white;
         }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-
-        .blog-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            grid-gap: 20px;
-            margin-top: 20px;
-        }
-
-        .blog-card {
-            background-color: #ffffff;
-            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            text-align: center;
-        }
-
-        .blog-img {
-            width: 100%;
-            max-height: 200px;
-            object-fit: cover;
-            border-radius: 4px;
-            margin-bottom: 20px;
-        }
-
-        .blog-title {
-            font-size: 20px;
-            margin-bottom: 10px;
-        }
-
-        .blog-description {
-            margin-bottom: 15px;
-        }
-
-        .read-more {
-            display: inline-block;
-            padding: 8px 16px;
-            background-color: #FFCAC8;
-            color: #ffffff;
-            text-decoration: none;
-            border-radius: 4px;
-        }
-
-        .read-more:hover {
-            background-color: #e86e6acf;
-        }
     </style>
 
     <link href="sidebars.css" rel="stylesheet">
@@ -276,7 +226,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="portofolio" class="nav-link active py-2 border-bottom rounded-0" title="Portofolio"
+                        <a href="portofolio" class="nav-link py-2 border-bottom rounded-0" title="Portofolio"
                             data-bs-toggle="tooltip" data-bs-placement="right">
                             <i class="bi bi-folder-fill icon-color" style="font-size: 24px"></i>
                         </a>
@@ -306,7 +256,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="settings" class="nav-link py-2 border-bottom rounded-0" title="Settings"
+                        <a href="settings" class="nav-link active py-2 border-bottom rounded-0" title="Settings"
                             data-bs-toggle="tooltip" data-bs-placement="right">
                             <i class="bi bi-gear-fill icon-color" data-bs-toggle="dropdown"
                                 style="font-size: 24px"></i>
@@ -330,62 +280,8 @@
                 </div>
             </div>
 
-            <!-- Content-->
-            <div class="container">
-                <h1 class="mt-4 mb-4 text-center">Portofolio</h1>
-                <div class="blog-grid">
-                    <div class="blog-card">
-                        <img src="../img/blog1.jpeg" alt="Blog Image" class="blog-img">
-                        <h2 class="blog-title">Judul</h2>
-                        <a href="#" class="read-more">Lihat</a>
-                    </div>
-                    <div class="blog-card">
-                        <img src="../img/blog2.jpeg" alt="Blog Image" class="blog-img">
-                        <h2 class="blog-title">Judul</h2>
-                        <a href="#" class="read-more">Lihat</a>
-                    </div>
-                    <div class="blog-card">
-                        <img src="../img/blog3.jpeg" alt="Blog Image" class="blog-img">
-                        <h2 class="blog-title">Judul</h2>
-                        <a href="#" class="read-more">Lihat</a>
-                    </div>
-                </div>
-                <div class="blog-grid">
-                    <div class="blog-card">
-                        <img src="../img/blog4.jpeg" alt="Blog Image" class="blog-img">
-                        <h2 class="blog-title">Judul</h2>
-                        <a href="#" class="read-more">Lihat</a>
-                    </div>
-                    <div class="blog-card">
-                        <img src="../img/blog5.jpeg" alt="Blog Image" class="blog-img">
-                        <h2 class="blog-title">Judul</h2>
-                        <a href="#" class="read-more">Lihat</a>
-                    </div>
-                    <div class="blog-card">
-                        <img src="../img/blog6.jpeg" alt="Blog Image" class="blog-img">
-                        <h2 class="blog-title">Judul</h2>
-                        <a href="#" class="read-more">Lihat</a>
-                    </div>
-                </div>
-                <div class="blog-grid">
-                    <div class="blog-card">
-                        <img src="../img/blog7.jpeg" alt="Blog Image" class="blog-img">
-                        <h2 class="blog-title">Judul</h2>
-                        <a href="#" class="read-more">Lihat</a>
-                    </div>
-                    <div class="blog-card">
-                        <img src="../img/blog8.jpeg" alt="Blog Image" class="blog-img">
-                        <h2 class="blog-title">Judul</h2>
-                        <a href="#" class="read-more">Lihat</a>
-                    </div>
-                    <div class="blog-card">
-                        <img src="../img/blog9.jpeg" alt="Blog Image" class="blog-img">
-                        <h2 class="blog-title">Judul</h2>
-                        <a href="#" class="read-more">Lihat</a>
-                    </div>
-                </div>
-            </div>
-            <!-- End Content-->
+<!-- Content-->
+<!-- End Content-->
 
         </main>
         <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>

@@ -238,7 +238,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="client" class="nav-link py-2 border-bottom rounded-0" title="Client"
+                        <a href="client" class="nav-link   py-2 border-bottom rounded-0" title="Client"
                             data-bs-toggle="tooltip" data-bs-placement="right">
                             <i class="bi bi-database-fill icon-color" style="font-size: 24px"></i>
                         </a>
@@ -279,57 +279,10 @@
                     </ul>
                 </div>
             </div>
-            <div class="page container-lg">
-                <img src="../img/user.png" alt="mdo" width="250" height="250" class="rounded-circle">
-            </div>
-            <div class="tulisan">
-                DEBI NURMUSTAQIMAH
-            </div>
-            <div class="deskripsi">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo eveniet dolore ut
-                autem exercitationem qui Hahdaugfabf ajdag ndjssu.</div>
 
-            <div class="media-sosial">
-                <ul class="nav nav-flush mb-auto text-center">
-                    <li>
-                        <a href="search" class="icon" title="Tik Tok" data-bs-toggle="tooltip"
-                            data-bs-placement="right">
-                            <i class="bi bi-tiktok icon-color" style="font-size: 24px"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="beranda" class="icon" aria-current="page" title="Twitter"
-                            data-bs-toggle="tooltip" data-bs-placement="right">
-                            <i class="bbi bi-twitter icon-color" style="font-size: 24px"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="aboutme" class="icon" title="Gituhub" data-bs-toggle="tooltip"
-                            data-bs-placement="right">
-                            <i class="bi bi-github icon-color" style="font-size: 24px"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="aboutme" class="icon" title="Websites" data-bs-toggle="tooltip"
-                            data-bs-placement="right">
-                            <i class="bi bi-globe icon-color" style="font-size: 24px"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="portofolio" class="icon" title="Youtube" data-bs-toggle="tooltip"
-                            data-bs-placement="right">
-                            <i class="bi bi-youtube icon-color" style="font-size: 24px"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+<!-- Content-->
+<!-- End Content-->
 
-            <div class="row mb-0">
-                <div class="col-md-6 offset-md-4 text-center">
-                    <button type="text" href="aboutme" class="btn ">
-                        {{ __('Tentang Saya') }}
-                    </button>
-                </div>
-            </div>
         </main>
         <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
